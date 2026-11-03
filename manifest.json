@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Video Control for Instagram \u2014 Embed Support",
+  "version": "1.0.0",
+  "description": "Adds seeking, playback speed and volume controls to Instagram embeds in Content Studio. Companion adaptation of Arcus92/instagram-video-control.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.instagram.com/*/embed/*"
+      ],
+      "js": [
+        "js/embed.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
